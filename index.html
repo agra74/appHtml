@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency Setup</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="step1" class="step">
+    <h2>Configuration de l'agence</h2>
+    <label for="nom_agence">Nom de l'agence</label>
+    <input type="text" id="nom_agence">
+    <label for="code_agence">Code agence</label>
+    <input type="text" id="code_agence">
+    <button id="next">Suivant</button>
+  </div>
+
+  <div id="step2" class="step" style="display:none;">
+    <h2>Créer le compte administrateur</h2>
+    <label for="matricule">Matricule</label>
+    <input type="text" id="matricule">
+    <label for="nomeprenom">Nom et prénom</label>
+    <input type="text" id="nomeprenom">
+    <label for="role">Rôle</label>
+    <input type="text" id="role">
+    <label for="motdepasse">Mot de passe</label>
+    <input type="password" id="motdepasse">
+    <button id="back">Retour</button>
+    <button id="create">Créer</button>
+    <div id="status" style="display:none;" class="status">Création en cours...</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
